@@ -14,6 +14,7 @@ export default function Home() {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
+    // @ts-ignore
     const prompt = formData.get("prompt")?.toString().trim();
 
     if (prompt) {
