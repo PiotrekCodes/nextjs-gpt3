@@ -89,8 +89,8 @@ export default function Home() {
         {quoteLoading && <Spinner />}
         {quoteLoadingError && "Something went wrong..."}
         {quote && (
-          <div className="text-center">
-            <p>{quote}</p>
+          <div className="text-center border-b-2 border-b-fuchsia-600">
+            <p className="text-xl mb-4">{quote}</p>
           </div>
         )}
       </section>
