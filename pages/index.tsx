@@ -6,9 +6,7 @@ import { FormEvent, useState } from "react";
 import FormData from "form-data";
 
 export default function Home() {
-  const [quote, setQuote] = useState(
-    "I'm so excited about meeting the inspirational Ronald McDonald! It's such an honor to meet a living icon who has made a positive impact on the world. I'm sure this meeting will be full of great life lessons and advice for me to take away, and I'm ready to seize the day! #McDonalds #LivingLegend #Gratitude #Motivation"
-  );
+  const [quote, setQuote] = useState("");
   const [quoteLoading, setQuoteLoading] = useState(false);
   const [quoteLoadingError, setQuoteLoadingError] = useState(false);
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
